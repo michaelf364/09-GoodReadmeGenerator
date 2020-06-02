@@ -2,7 +2,7 @@
   
 # weather dashboard
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/michaelf364/06-server-side-apis)
-## a dashboard that provides weather information
+## dashboard that shows weather
 
 Table of Contents 
 * [Installation](#installation)
@@ -18,7 +18,7 @@ This repository does not require installation.
 
 ## Usage
 
-weather dashboard
+hosting a weather dashboard
 
 ## License
 
@@ -31,4 +31,4 @@ This repository does not require contribution.
 ## Questions
 
 If you have any questions about the repo, open an issue or contact [michaelf364](https://github.com/michaelf364/) directly at 1@1.com
-[avatar](undefined)
+[avatar](https://avatars3.githubusercontent.com/u/26904234?v=4)

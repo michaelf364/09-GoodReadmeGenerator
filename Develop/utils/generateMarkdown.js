@@ -57,7 +57,6 @@ function generateLicenseBadge(license, url) {
 function avatar(avatar) {
   ghAvatar(avatar).then(avatar => {
     console.log(avatar);
-    return avatar;
     //=> 'https://avatars.githubusercontent.com/u/170270?v=3'
   })
 }
