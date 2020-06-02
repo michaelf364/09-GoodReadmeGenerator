@@ -42,7 +42,7 @@ const questions = [
         type: "input",
         message: "How would someone contribute? (leave blank if not applicable.)",
         name: "contributing",
-        default: "This repository does not require contribution."
+        default: "This repository does not need contributions."
     }
 ];
 

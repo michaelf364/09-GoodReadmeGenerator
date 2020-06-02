@@ -6,14 +6,13 @@ function generateMarkdown(data) {
   
 # ${data.title}
 ${generateLicenseBadge(data.license, data.url)}
-## ${data.description}
+${data.description}
 
-Table of Contents 
+## Table of Contents 
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
-* [Tests](#test)
 * [Questions](#questions)
 
 ## Installation
@@ -35,7 +34,7 @@ ${data.contributing}
 ## Questions
 
 If you have any questions about the repo, open an issue or contact [${data.username}](https://github.com/${data.username}/) directly at ${data.email}
-[avatar](${avatar(data.username)})
+![avatar](${avatar(data.username)})
 `;
 }
 
