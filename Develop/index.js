@@ -1,6 +1,6 @@
 var inquirer = require("inquirer");
 var fs = require("fs");
-var gen = require("./utils/generateMarkdown")
+var generateMarkdown = require("./utils/generateMarkdown")
 
 const questions = [
     {
@@ -31,7 +31,8 @@ const questions = [
     }, {
         type: "input",
         message: "Does this repository require licensing?",
-        name: "license"
+        name: "license",
+        default: "This repository does not require licensing."
     }, {
         type: "input",
         message: "How would someone contribute? (leave blank if not applicable.)",
@@ -41,11 +42,19 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, function(err){
+        if(err){
+            return console.log(err);
+            
+        }
+    });
 }
 
 function init() {
     inquirer.prompt(questions)
-    .then()
+    .then(answers =>{
+        writeToFile("readme.md", generateMarkdown(answers));
+    })
 }
 
 init();
