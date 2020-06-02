@@ -17,7 +17,7 @@ This repository does not require installation.
 
 ## Functioning GIF
 
-![gif](https://i.imgur.com/kdS3LxX.mp4)
+![gif](https://imgur.com/a/tOJGTpF)
 
 ## Contributing
 
