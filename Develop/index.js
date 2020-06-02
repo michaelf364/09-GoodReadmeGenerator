@@ -13,6 +13,11 @@ const questions = [
         name: "email"
     }, {
         type: "input",
+        name: "url",
+        message: "What is the URL to your project?",
+        default: "https://github.com/"
+      }, {
+        type: "input",
         message: "What is the name of your project?",
         name: "title"
     }, {
@@ -29,11 +34,11 @@ const questions = [
         message: "What is this repository for?",
         name: "usage"
     }, {
-        type: "input",
-        message: "Does this repository require licensing?",
+        type: "list",
         name: "license",
-        default: "This repository does not require licensing."
-    }, {
+        message: "What kind of license should your project have?",
+        choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+      }, {
         type: "input",
         message: "How would someone contribute? (leave blank if not applicable.)",
         name: "contributing",
@@ -49,6 +54,7 @@ function writeToFile(fileName, data) {
         }
     });
 }
+
 
 function init() {
     inquirer.prompt(questions)
