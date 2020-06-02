@@ -17,7 +17,7 @@ This repository does not require installation.
 
 ## Functioning GIF
 
-![gif](https://imgur.com/TOoBYwt.gif)
+![gif](https://i.imgur.com/NjDV748.gif)
 
 ## Contributing
 
